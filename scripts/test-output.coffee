@@ -1,14 +1,18 @@
-_ = require 'underscore'
-
 # Dump out the output of a message
 #
 # test-output
 
 module.exports = (robot) ->
-  robot.respond /test-output!/i, (msg) ->
-    msg.send _.keys(robot)
-    msg.send _.keys(msg)
+  robot.respond /log-test-output (robot|message)/i, (msg) ->
+    if msg.match[1] is 'robot'
+      console.log robot
+    else
+      console.log msg
+    msg.send 'Done'
   
-  robot.hear /test-output!/i, (msg) ->
-    msg.send _.keys(robot)
-    msg.send _.keys(msg)
+  robot.hear /log-test-output (robot|message)/i, (msg) ->
+    if msg.match[1] is 'robot'
+      console.log robot
+    else
+      console.log msg
+    msg.send 'Done'
