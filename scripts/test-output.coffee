@@ -12,7 +12,7 @@ module.exports = (robot) ->
     
   
   robot.respond /log-user-details/i, (msg) ->
-    console.log msg.user
+    console.log msg.message.user
     msg.send 'Done'
     
   
