@@ -38,5 +38,7 @@ module.exports = (robot) ->
   robot.respond /insult (.*)/i, (msg) ->
     if msg.match[1].match /.*nathan.*/ig
       msg.send "How dare you!"
-    else
+    if msg.match[1].match /.*alfred.*/ig
+      msg.send "Now why would I want to do that?"
+    else if msg.match[1].replace(/\s/g, '') != ''
       msg.send "#{msg.match[1]}, #{insults[Math.floor(Math.random() * 100 % insults.length)]}"
