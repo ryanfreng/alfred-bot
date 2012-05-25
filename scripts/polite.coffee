@@ -5,13 +5,13 @@
 
 welcome_responses = [
   'It\'s good to be back, sir',
-  'Thank you, sir'
+  'Thank you, sir',
+  'At your service, sir'
 ]
 
 thanks_responses = [
   'My pleasure, sir',
   'Very good, sir',
-  'Of course, sir'
 ]
 
 module.exports = (robot) ->
