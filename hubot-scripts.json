@@ -1,1 +1,17 @@
-["redis-brain.coffee", "hackernews.coffee", "lastfm_np.coffee"]
+["redis-brain.coffee", "hackernews.coffee", "lastfm_np.coffee", 
+"call-me-maybe.coffee",
+"google-images.coffee",
+"help.coffee",
+"httpd.coffee",
+"insult.coffee",
+"maps.coffee",
+"math.coffee",
+"ping.coffee",
+"polite.coffee",
+"pugme.coffee",
+"roles.coffee",
+"rules.coffee",
+"storage.coffee",
+"test-output.coffee",
+"translate.coffee",
+"youtube.coffee"]
