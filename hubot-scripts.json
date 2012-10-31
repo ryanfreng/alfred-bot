@@ -1,7 +1,7 @@
 ["redis-brain.coffee", "hackernews.coffee", "lastfm_np.coffee", 
 "call-me-maybe.coffee",
 "google-images.coffee",
-"help.coffee",
+"/scripts/help.coffee",
 "httpd.coffee",
 "insult.coffee",
 "maps.coffee",
